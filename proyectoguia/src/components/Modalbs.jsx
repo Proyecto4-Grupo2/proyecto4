@@ -1,9 +1,9 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'; // // Importa CSS para BS
-import 'bootstrap';// Importa JS para BS
+import 'bootstrap/dist/css/bootstrap.min.css'; // Importa CSS para BS
+import 'bootstrap'; // Importa JS para BS
 
 
-function Modal() {
+function Modalbs() {
     return  (
         <div className="modalbs">
             <div className="container mt-3">
@@ -38,4 +38,4 @@ function Modal() {
 }
 
 
-export default Modal
+export default Modalbs

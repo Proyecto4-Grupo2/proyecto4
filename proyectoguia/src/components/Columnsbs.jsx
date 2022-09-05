@@ -4,7 +4,7 @@ import 'bootstrap' // Importa JS para BS
 
 // Crea las columnas en BS
 
-function Columns() {
+function Columnsbs() {
   return  (
     <div className="columnsbs">
         <div className="container mt-5">
@@ -33,4 +33,4 @@ function Columns() {
 }
   
   
-export default Columns
+export default Columnsbs

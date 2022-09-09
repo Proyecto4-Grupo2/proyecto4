@@ -1,0 +1,30 @@
+.foto-hero {
+    height: auto;
+    width: 100%;
+}
+
+.contenedor-texto-hero{
+    background-color: black;
+    color: white;
+}
+
+.texto-debajo-hero{
+    color: aqua;
+}
+
+.texto-debajo-hero a{
+    color: #F7D101;
+    text-decoration: none;
+}
+
+.texto-principal-hero{
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    left: calc(1800px/2 - 40px); 
+    top: calc(950px/2 - 10px);
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5em;
+}

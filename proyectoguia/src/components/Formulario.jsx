@@ -78,7 +78,7 @@ const Formulario = () => {
                 <label>Mensaje</label>
                 <input type="text" {...register('mensaje')}/>
             </div>
-            <input type="submit" value="Enviar"/>
+            <input type="submit" className="btn btn-primary" value="Enviar"/>
         </form>
     </div>
 }

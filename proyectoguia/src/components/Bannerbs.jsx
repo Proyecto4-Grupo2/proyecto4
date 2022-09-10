@@ -4,7 +4,7 @@ import 'bootstrap' // Importa JS para BS
 
 // Crea el banner en BS
 
-function Banner() {
+function Bannerbs() {
   return  (
     <div className="bannerbs">
       <div className="container-fluid p-5 bg-primary text-white text-center">
@@ -16,4 +16,4 @@ function Banner() {
 }
   
   
-export default Banner
+export default Bannerbs

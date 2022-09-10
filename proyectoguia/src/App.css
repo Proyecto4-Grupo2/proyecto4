@@ -1,5 +1,7 @@
-html,body{
-font-family: 'Helvetica'
+html,body {
+  font-family: 'Helvetica';
+  position: relative; 
+
 }
 
 .App {
@@ -41,3 +43,17 @@ font-family: 'Helvetica'
     transform: rotate(360deg);
   }
 }
+
+/* Tamaño de fuente de párrafo de 20px y espaciado entre letras de 5px, no pueden haber más de 44 caracteres por columna */
+
+h1 {
+  letter-spacing: 5px;
+  font-size: 24px;
+
+}
+
+p {
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+

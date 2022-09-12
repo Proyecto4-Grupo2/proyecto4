@@ -1,4 +1,6 @@
+import React from "react";
 import { useForm } from "react-hook-form";
+import "../style/formulario.css";
 
 const Formulario = () => {
     
@@ -14,8 +16,8 @@ const Formulario = () => {
 
     const nie = watch('nie')
 
-    return <div>
-        <h2>Formulario</h2>
+    return <div className="contenedor-formulario">
+        <h2>Contáctanos</h2>
         <p>Bienvenid@ {watch('nombre')}</p>
         <form onSubmit={handleSubmit(onSubmit)}>
             <div>
@@ -71,14 +73,15 @@ const Formulario = () => {
             { incluirProvincia && (
                 <div>
                 <label>Provincia</label>
-                <input type="text" {...register('provincia')}/>
+                <input type="text" {...register('provincia')}/> <br/>
             </div>
             )}
-            <div>
+            <br/>
+            <div className="contenedor-mensaje">
                 <label>Mensaje</label>
                 <input type="text" {...register('mensaje')}/>
             </div>
-            <input type="submit" className="btn btn-primary" value="Enviar"/>
+            <input type="submit" className="btn-enviar" value="Enviar"/>
         </form>
     </div>
 }

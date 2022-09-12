@@ -1,0 +1,32 @@
+.contenedor-newsletter {
+    font-family: Helvetica;
+    height: 15em;
+    width: 300px;
+    background-color: black;
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.contenedor-newsletter h2 {
+    color: aqua;
+
+}
+.contenedor-newsletter label {
+    color: white;
+    display: inline-block;
+    width: 80px;
+}
+.contenedor-newletter input {
+    background-color: yellow;
+     justify-content: center;
+}
+.contenedor-newsletter .btn-enviar {
+    background-color: aqua;
+    margin-top: 20px;
+}
+.contenedor-newsletter p {
+    color: yellow;
+}

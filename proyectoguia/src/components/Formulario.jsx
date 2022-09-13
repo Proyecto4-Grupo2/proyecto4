@@ -1,6 +1,8 @@
-import React from "react";
-import { useForm } from "react-hook-form";
+import React, {useRef} from "react";
+import {useForm} from "react-hook-form";
 import "../style/formulario.css";
+import ReCAPTCHA from "react-google-recaptcha"; 
+
 
 const Formulario = () => {
     
@@ -15,6 +17,14 @@ const Formulario = () => {
     const dni = watch('dni')
 
     const nie = watch('nie')
+
+    const captcha = useRef(null);
+
+    const onChange =() => {
+        if(captcha.current.getValue()){
+            console.log('el usuario no es un robot');
+        }
+    }
 
     return <div className="contenedor-formulario">
         <h2>Contáctanos</h2>
@@ -80,6 +90,14 @@ const Formulario = () => {
             <div className="contenedor-mensaje">
                 <label>Mensaje</label>
                 <input type="text" {...register('mensaje')}/>
+            </div>
+            <div className="recaptcha"> 
+                <ReCAPTCHA 
+                    ref={captcha}
+                    sitekey ="6Le2F_MhAAAAAPzMMFth2MvpZXjW9FgyUozVCtWK"
+                    onChange={onChange}
+                />
+                <div className="g-recaptcha" data-sitekey="6Le2F_MhAAAAAPzMMFth2MvpZXjW9FgyUozVCtWK"></div>
             </div>
             <input type="submit" className="btn-enviar" value="Enviar"/>
         </form>

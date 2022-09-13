@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/Navbar.css";
-import Modalbs from "./modalF.jsx";
-import Modalbs2 from "./modalN.jsx";
+import ModalF from "./ModalF.jsx";
+import ModalN from "./ModalN.jsx";
 
 function Navbar() {
     return (
@@ -19,17 +19,20 @@ function Navbar() {
           <button className='nav-link'>Mapa</button>
           <button className='nav-link'>Acerca de</button>
           <button className='nav-link'>Contacto
-            <Modalbs>
-            </Modalbs>
+            <ModalF>
+            </ModalF>
           </button>
-          <button className='nav-link'>Suscríbete
-            <Modalbs2>
-            </Modalbs2>
-          </button>
+         
           <img className='icono-accesibilidad' src={require("../imagenes/iconoaccesib.jpg")} alt="icono accesibilidad"/>
+          <button className='suscribete'>Suscríbete
+            <ModalN>
+            </ModalN>
+          </button>
         </div>
       </div>
-)}
+    )
+}
+
 
 export default Navbar;
 

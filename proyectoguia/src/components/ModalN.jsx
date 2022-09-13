@@ -1,10 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importa CSS para BS
 import 'bootstrap'; 
-import Formulario from './Formulario';
 import "../style/modal.css";
+import Newsletter from './Newsletter';
 
-function Modalbs() {
+function ModalN() {
     return  (
         <div className="modalbs">
             <div className="container mt-0">
@@ -17,9 +17,8 @@ function Modalbs() {
                             <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
                         </div>
                         <div className="modal-body">
-                            <Formulario>
-
-                            </Formulario>
+                            <Newsletter>
+                            </Newsletter>
                         </div>
                         {/* <div className="modal-footer">
                         <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Close</button>
@@ -28,5 +27,7 @@ function Modalbs() {
                 </div>
         </div>
         </div>
-    )}
-export default Modalbs;
+    )
+}
+
+export default ModalN;

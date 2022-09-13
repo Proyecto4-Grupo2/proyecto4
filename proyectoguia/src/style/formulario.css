@@ -1,7 +1,7 @@
 .contenedor-formulario {
     font-family: Helvetica;
     height: 35em;
-    width: 300px;
+    width: 450px;
     background-color: black;
     border-radius: 15px;
     display: grid;
@@ -27,8 +27,12 @@
 }
 .contenedor-formulario .btn-enviar {
     background-color: aqua;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
+.recaptcha{
+    margin-left: 100px;
+    margin-top: 10px;
+}
 
 

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import styled from 'styled-components';
 import Modal from './components/Modal';
+import Formulario from './components/Formulario';
 
 const App = () => {
 	const [estadoModal1, cambiarEstadoModal1] = useState(false);
@@ -83,7 +84,7 @@ const App = () => {
 				padding={'0px'}
 			>
 				<Contenido>
-					<img src="https://images.unsplash.com/photo-1598978510474-09d06dc6a5d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80" alt="" />
+					<Formulario />
 				</Contenido>
 			</Modal>
 		</div>

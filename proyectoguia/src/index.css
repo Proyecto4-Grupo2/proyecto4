@@ -5,21 +5,21 @@ html,
 body {
   position: relative; 
   font-family: Helvetica;
-  letter-spacing: 5px;
+  /* letter-spacing: 5px; */
 }
 
 App {
-  font-size: 24px;
-  letter-spacing: 5px;
+  font-size: 10px;
+  /* letter-spacing: 5px; */
 }
 
 h1 {
-  letter-spacing: 5px;
+  /* letter-spacing: 5px; */
 }
 
 p {
-  font-size: 20px;
-  letter-spacing: 5px;
+  font-size: 10px;
+  /* letter-spacing: 5px; */
 }
 
 

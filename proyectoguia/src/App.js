@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // importador de Bootstrap 
 import Navbar from './components/Navbar';
@@ -6,7 +6,11 @@ import Hero from './components/Hero';
 import styled from 'styled-components';
 import Modal from './components/Modal';
 
-function App() {
+const App = () => {
+	const [estadoModal1, cambiarEstadoModal1] = useState(false);
+	const [estadoModal2, cambiarEstadoModal2] = useState(false);
+	const [estadoModal3, cambiarEstadoModal3] = useState(false);
+	const [estadoModal4, cambiarEstadoModal4] = useState(false);
   return (
     <div className="App">
       <Navbar />

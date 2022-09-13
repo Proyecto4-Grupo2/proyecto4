@@ -104,4 +104,4 @@ const Formulario = () => {
     </div>
 }
 
-export default Formulario;
+export default Formulario; 

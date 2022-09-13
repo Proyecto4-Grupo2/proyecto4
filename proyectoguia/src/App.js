@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import styled from 'styled-components';
 import Modal from './components/Modal';
 import Formulario from './components/Formulario';
+import Newsletter from './components/Newsletter';
 
 const App = () => {
 	const [estadoModal1, cambiarEstadoModal1] = useState(false);
@@ -18,25 +19,24 @@ const App = () => {
       <Hero />
       <div>
 			<ContenedorBotones>
-				<Boton onClick={() => cambiarEstadoModal1(!estadoModal1)}>Modal 1</Boton>
-				<Boton onClick={() => cambiarEstadoModal2(!estadoModal2)}>Modal 2</Boton>
-				<Boton onClick={() => cambiarEstadoModal3(!estadoModal3)}>Modal 3</Boton>
-				<Boton onClick={() => cambiarEstadoModal4(!estadoModal4)}>Modal 4</Boton>
+				<Boton onClick={() => cambiarEstadoModal1(!estadoModal1)}>Acerca de</Boton>
+				<Boton onClick={() => cambiarEstadoModal2(!estadoModal2)}>Contacto</Boton>
+				<Boton onClick={() => cambiarEstadoModal3(!estadoModal3)}>Suscribete</Boton>
+				<Boton onClick={() => cambiarEstadoModal4(!estadoModal4)}>Accesibilidad</Boton>
 			</ContenedorBotones>
 
 			{/* Modal #1 */}
 			<Modal
 				estado={estadoModal1}
 				cambiarEstado={cambiarEstadoModal1}
-				titulo="Hola!"
+				titulo="Acerca de"
 				mostrarHeader={true}
 				mostrarOverlay={true}
 				posicionModal={'center'}
 				padding={'20px'}
 			>
 				<Contenido>
-					<h1>Ventana Modal</h1>
-					<p>Reutilizable y con opciones de personalización.</p>
+					Quienes somos
 					<Boton onClick={() => cambiarEstadoModal1(!estadoModal1)}>Aceptar</Boton>
 				</Contenido>
 			</Modal>
@@ -47,14 +47,12 @@ const App = () => {
 				cambiarEstado={cambiarEstadoModal2}
 				titulo="Ventana 2!"
 				mostrarHeader={false}
-				mostrarOverlay={false}
+				mostrarOverlay={true}
 				posicionModal={'end'}
 				padding={'20px'}
 			>
 				<Contenido>
-					<h1>Ventana Modal 2</h1>
-					<p>Reutilizable y con opciones de personalización.</p>
-					<Boton onClick={() => cambiarEstadoModal1(!estadoModal1)}>Aceptar</Boton>
+					<Formulario />
 				</Contenido>
 			</Modal>
 
@@ -63,13 +61,13 @@ const App = () => {
 				estado={estadoModal3}
 				cambiarEstado={cambiarEstadoModal3}
 				titulo="Ventana 3!"
-				mostrarHeader={true}
-				mostrarOverlay={false}
+				mostrarHeader={false}
+				mostrarOverlay={true}
 				posicionModal={'start'}
 				padding={'20px'}
 			>
 				<Contenido>
-					<img src="https://images.unsplash.com/photo-1598978510474-09d06dc6a5d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80" alt="" />
+					<Newsletter />
 				</Contenido>
 			</Modal>
 
@@ -84,7 +82,7 @@ const App = () => {
 				padding={'0px'}
 			>
 				<Contenido>
-					<Formulario />
+					Accesibilidad
 				</Contenido>
 			</Modal>
 		</div>

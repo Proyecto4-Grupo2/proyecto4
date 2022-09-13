@@ -4,16 +4,12 @@
 
 .navbar {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: left;
+	/* flex-wrap: wrap; */
+  justify-content: space-between;
+  justify-items: end;
   margin: 0 auto;
   background-color: black;
   color: aqua;
-}
-
-.botonesNavbar{
-  display: flex;
-  justify-content: right;
 }
 
 .texto-navbar {
@@ -24,8 +20,9 @@
 
 .logo-home{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: max-content;
+  margin-left: 15px;
 }
 
 .logo-home img {
@@ -58,6 +55,7 @@
   display: flex;
   align-items: center;
   width: max-content;
+  justify-content: flex-start;
 }
 
 .logo-home img {
@@ -70,13 +68,23 @@
 }
 
 .icono-lupa {
-  height: 10px;
-  width: 10px;
-  margin-right: 10px;
-  margin-left: 60px;
+  height: 50px;
+  align-items: center;
+  width: 50px;
+  margin-top: 30px;
+  margin-right: 5px;
+  margin-left: 450px;
 }
 
 .icono-accesibilidad {
   height: 60px;
   width: 60px;
+}
+
+.texto-accesibilidad{
+  margin-left: 20px;
+}
+
+.textoCookies{
+  font-size: 0.05em;
 }

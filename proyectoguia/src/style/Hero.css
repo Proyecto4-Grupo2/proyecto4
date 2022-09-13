@@ -6,10 +6,18 @@
 .contenedor-texto-hero{
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: -10px;
+    align-items: center;
+    font-size: 2em;
 }
 
 .texto-debajo-hero{
     color: aqua;
+    padding: 0;
+    margin: 10px;
+    letter-spacing: 5px;
 }
 
 .texto-debajo-hero a{
@@ -21,10 +29,15 @@
     position: absolute;
     height: 200px;
     width: 400px;
-    left: calc(1800px/2 - 40px); 
-    top: calc(950px/2 - 10px);
+    left: calc(2300px/2 - 40px); 
+    top: calc(1200px/2 - 10px);
     background-color: black;
     color: white;
     font-weight: 700;
+    font-size: 2.5em;
+}
+
+.texto-madrid{
+    font-weight: 1000;
     font-size: 2.5em;
 }

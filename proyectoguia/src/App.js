@@ -7,6 +7,7 @@ import Formulario from './components/Formulario';
 import Newsletter from './components/Newsletter';
 
 const App = () => {
+  const [estadoModal5, cambiarEstadoModal5] = useState(true);
 	const [estadoModal1, cambiarEstadoModal1] = useState(false);
 	const [estadoModal2, cambiarEstadoModal2] = useState(false);
 	const [estadoModal3, cambiarEstadoModal3] = useState(false);
@@ -19,11 +20,11 @@ const App = () => {
           <div className="texto-navbar">
             <h2>Culture Club</h2>
             <p>Cultura a pie de calle</p>
+          </div>
         </div>
         <img className='icono-lupa' alt="icono lupa" src={require("./imagenes/lupa_navbar.png")}/>
         <ContenedorBotones>
           <Boton className='nav-link'>Rutas</Boton>
-          <Boton className='nav-link'>Mapa</Boton>
           <Boton onClick={() => cambiarEstadoModal1(!estadoModal1)}>Acerca de</Boton>
           <Boton onClick={() => cambiarEstadoModal2(!estadoModal2)}>Contacto</Boton>
           <Boton onClick={() => cambiarEstadoModal3(!estadoModal3)}>Suscribete</Boton>
@@ -35,13 +36,24 @@ const App = () => {
           estado={estadoModal1}
           cambiarEstado={cambiarEstadoModal1}
           titulo="Acerca de"
-          mostrarHeader={true}
+          mostrarHeader={false}
           mostrarOverlay={true}
           posicionModal={'center'}
           padding={'20px'}
         >
           <Contenido>
-            Quienes somos
+            <h2>Conoce a cultureClub</h2>
+      <h3> La misión de cultureClub</h3>
+        <p> Pretendemos contribuir a la democratización de la cultura, facilitando el acceso a la información
+          de atractivos culturales a través de la tecnología móvil.</p>
+        <p>Queremos poner en valor la cultura a pie de calle, destacar todo tipo de atractivos que pueden ser 
+          interesantes pero que quizás están ocultos o pasan desapercibidos.</p>
+      <h3>Nuestra visión</h3>
+      <p>Somos partidarios de movernos de forma responsable y poco contaminante siempre que sea 
+        posible y eso incluye también la movilidad en nuestro tiempo de ocio y en los viajes. Por eso nos 
+        gusta saber que otras empresas e instituciones van con nosotros de la mano para conseguir que 
+        estos objetivos se cumplan. </p>
+
             <Boton onClick={() => cambiarEstadoModal1(!estadoModal1)}>Aceptar</Boton>
           </Contenido>
         </Modal>
@@ -87,13 +99,33 @@ const App = () => {
           padding={'0px'}
         >
           <Contenido>
-            <p>CultureClub está comprometida con la accesibilidad de nuestro sitio web. 
+            <p className='texto-accesibilidad'>CultureClub está comprometida con la accesibilidad de nuestro sitio web. 
 Queremos que nuestra página puedan usarla todas las personas, sin importar cuáles sean sus impedimentos y qué tecnologías utilicen. Esto es parte de nuestra estrategia de igualdad diaria. 
 Hemos hecho que el sitio sea lo más utilizable posible, teniendo en cuenta las directrices de accesibilidad web de las mejores prácticas, incluyendo WCAG 2.0, WCAG 2.1 
 Pero es posible que tenga una mejor experiencia si cambia la configuración de su ordenador para que se adapte a sus necesidades individuales. </p>
           </Contenido>
+          </Modal>
+         {/* Modal #5 */}
+         <Modal
+          estado={estadoModal5}
+          cambiarEstado={cambiarEstadoModal5}
+          titulo="Aviso Cookies"
+          mostrarHeader={false}
+          mostrarOverlay={true}
+          posicionModal={'center'}
+          padding={'20px'}
+        >
+          <Contenido>
+            <div className="textoCookies">
+           <h1>Aviso de Cookies</h1>
+		<p>Una cookie es un fichero que se descarga en su ordenador al acceder a determinadas páginas web. Las cookies permiten a una página web, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo y, dependiendo de la información que contengan y de la forma en que utilice su equipo, pueden utilizarse para reconocer al usuario.</p>
+		<p>Puede usted permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su ordenador.</p>
+		<p>En la mayoría de los navegadores web se ofrece la posibilidad de permitir, bloquear o eliminar las cookies instaladas en su equipo.</p>
+		<p>Si tiene cualquier duda acerca de nuestra política de cookies, puede contactar con esta página web a través de nuestros canales de Contacto.</p>
+            </div>
+            <Boton onClick={() => cambiarEstadoModal5(!estadoModal5)}>Cerrar</Boton> 
+          </Contenido>
         </Modal>
-    </div>
     </div>
       <Hero />
     </div>
@@ -106,8 +138,9 @@ const ContenedorBotones = styled.div`
 	padding: 40px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: right;
-	gap: 20px;
+	justify-content: flex-end;
+  justify-items: end;
+	gap: 15px;
 `;
 
 const Boton = styled.button`

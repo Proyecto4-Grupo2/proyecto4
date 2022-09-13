@@ -10,7 +10,7 @@ function Hero() {
         </div>
         <div className="contenedor-texto-hero">
             <p className="texto-debajo-hero">Sigue las <a href="www.google.com">mejores rutas</a> o crea tu <a href="www.google.com">propio itinerario cultural</a></p>
-            <h2>MADRID CULTURAL A PIE DE CALLE</h2>
+            <p className="texto-Madrid">MADRID CULTURAL A PIE DE CALLE</p>
         </div>
     </div>
 )}

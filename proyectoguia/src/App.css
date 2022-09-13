@@ -1,38 +1,82 @@
 .App {
-  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+  margin: 0 auto;
+  background-color: black;
+  color: aqua;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.botonesNavbar{
   display: flex;
-  flex-direction: column;
+  justify-content: right;
+}
+
+.texto-navbar {
+  grid-template-rows: 1fr 1fr;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.logo-home{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: max-content;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-home img {
+  width: 60px;
+  height: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-home img:hover {
+  background-color: aqua 
+}
+
+/* .nav-link {
+	display: block;
+	padding: 10px 30px;
+	border-radius: 60px;
+	color: black;
+	border: none;
+	background: aqua;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	transition: .3s ease all;
+} */
+
+.nav-link:hover {
+  background-color: aqua 
+}
+
+.logo-home{
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.logo-home img {
+  width: 80px;
+  height: 80px;
+}
+
+.logo-home img:hover {
+  background-color: aqua 
+}
+
+.icono-lupa {
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+  margin-left: 60px;
+}
+
+.icono-accesibilidad {
+  height: 60px;
+  width: 60px;
 }

@@ -1,0 +1,9 @@
+.textoFooter {
+    font-family: Arial, Helvetica, sans-serif;
+    /* position: relative; */
+    letter-spacing: 5px;
+    font-size: 20px;
+    justify-content: center;
+    align-items:  center;
+    text-align: center;
+}

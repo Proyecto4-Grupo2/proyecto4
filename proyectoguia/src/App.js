@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Modal from './components/Modal';
 import Formulario from './components/Formulario';
 import Newsletter from './components/Newsletter';
+import Footerbs from './components/Footerbs';
 
 const App = () => {
   const [estadoModal5, cambiarEstadoModal5] = useState(true);
@@ -128,6 +129,7 @@ Pero es posible que tenga una mejor experiencia si cambia la configuración de s
         </Modal>
     </div>
       <Hero />
+      <Footerbs />
     </div>
   );
 }
@@ -146,7 +148,7 @@ const ContenedorBotones = styled.div`
 const Boton = styled.button`
 	display: block;
 	padding: 10px 30px;
-  height: 35px;
+  height: 45px;
 	border-radius: 100px;
 	color: black;
 	border: none;

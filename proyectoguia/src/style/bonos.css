@@ -73,3 +73,17 @@ body{
     font-size: 15px;
     letter-spacing: 5px;
 }
+
+.iconosAccesibles{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    width: 80px;
+    gap: 15px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.iconosAccesibles img{
+    justify-content: space-around;
+}

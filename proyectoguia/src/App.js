@@ -7,6 +7,8 @@ import Formulario from './components/Formulario';
 import Newsletter from './components/Newsletter';
 import Footerbs from './components/Footerbs';
 import Rutas from './components/Rutas';
+import Bonos from './components/Bonos';
+import RutasAccesibles from './components/RutasAccesibles';
 
 const App = () => {
   const [estadoModal5, cambiarEstadoModal5] = useState(true);
@@ -24,9 +26,8 @@ const App = () => {
             <p>Cultura a pie de calle</p>
           </div>
         </div>
-        <img className='icono-lupa' alt="icono lupa" src={require("./imagenes/lupa_navbar.png")}/>
         <ContenedorBotones>
-          <Boton className='nav-link'>Rutas</Boton>
+          <Boton>Rutas</Boton>
           <Boton onClick={() => cambiarEstadoModal1(!estadoModal1)}>Acerca de</Boton>
           <Boton onClick={() => cambiarEstadoModal2(!estadoModal2)}>Contacto</Boton>
           <Boton onClick={() => cambiarEstadoModal3(!estadoModal3)}>Suscribete</Boton>
@@ -130,7 +131,25 @@ Pero es posible que tenga una mejor experiencia si cambia la configuración de s
         </Modal>
     </div>
       <Hero />
-      <Rutas />
+      <Rutas/> 
+      <Bonos />
+      <RutasAccesibles />
+      <div className="redesSociales">
+          <h3>¿QUÉ HAY EN MADRID?</h3>
+          <p>Descubre rutas culturales</p>
+          <p>Conoce a cultureClub</p>
+          <p>Contactar con cultureClub</p>
+          <p>Suscribete al club</p>
+          <p>Misión y visión de cultureClub</p>
+          <div className="iconosRRSS">
+        <a href="https://www.instagram.com/">
+            <img width= "80px" src={require("./imagenes/icono_de_instagram.png")} alt="icono instagran"/>
+        </a>
+        <a href="www.linkedin.com">
+            <img width= "80px" src={require("./imagenes/linkedin_icono.png")} alt="icono Linkedin"/>
+        </a>
+        </div>
+      </div>
       <Footerbs />
     </div>
   );
@@ -160,7 +179,7 @@ const Boton = styled.button`
 	font-weight: 500;
 	transition: .3s ease all;
 	&:hover {
-		background: #0066FF;
+		background: yellow;
     }
 `;
 

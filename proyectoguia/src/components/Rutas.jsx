@@ -14,6 +14,10 @@ function Rutas() {
               setSearchTerm(event.target.value);
             }} />
           </div>
+          <div className="textoRutas">
+            <h1>Rutas culturales con contenido diverso y accesible</h1>
+            <h3>Ve a la web de cada ruta para crear tu itinerario</h3>
+        </div>
           <div className="template_Container">
             {
               data

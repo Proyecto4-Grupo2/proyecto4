@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "image": "https://elmiradordemadrid.es/wp-content/uploads/2022/05/Calle-Lavapies-grafiti.jpg",
+        "title": "Teatro Lope de Vega", 
+        "address": "Gran Vía 57",
+        "distrito": "Centro",
+        "descripcion": "Un símbolo del Broadway Madrileño, este teatro ha sido clave para impulsar los musicales en nuestro país, inaugurado en 1946.",
+        "enlace": "https://www.stage.es/teatro-lope-de-vega"
+    },
+    {
+        "id": 2,
+        "image": "https://elmiradordemadrid.es/wp-content/uploads/2022/05/Calle-Lavapies-grafiti.jpg",
+        "title": "Teatro Alcázar",
+        "address": "Alcalá 20",
+        "distrito": "Retiro",
+        "descripcion": "El antiguo Palacio de los Recreos, situado en una de las calles más emblematicas de Madrid, fue inaugurado en 1925. ",
+        "enlace": "https://gruposmedia.com/teatro-alcazar/"
+ 
+    },
+    {
+        "id": 3,
+        "image": "https://elmiradordemadrid.es/wp-content/uploads/2022/05/Calle-Lavapies-grafiti.jpg",
+        "title": "Librería Berkana",
+        "address": "Hortaleza 62",
+        "distrito": "Chueca",
+        "descripcion": "Fue la primera librería LGBT de España y América Latina, equivalente hispano de la mítica Oscar Wilde Bookshop de NY.",
+        "enlace": "https://www.libreriaberkana.com/"
+    },
+    {
+        "id": 4,
+        "image": "https://elmiradordemadrid.es/wp-content/uploads/2022/05/Calle-Lavapies-grafiti.jpg",
+        "title": "Librería Miguel Miranda",
+        "address": "Lope de Vega 19",
+        "distrito": "Centro",
+        "descripcion": "Situada en el barrio de Las Letras,frente a la lápida de Cervantes, librería especializada en libros antiguos, raros y agotados.",
+        "enlace": "http://www.libreriamiranda.com/"
+    },  
+   {
+        "id": 5,
+        "image": "https://elmiradordemadrid.es/wp-content/uploads/2022/05/Calle-Lavapies-grafiti.jpg",
+        "title": "Cines Renoir",
+        "address": "Narváez 42",
+        "distrito": "Retiro",
+        "descripcion": "Los primeros cines Renoir se ubicaron en  Plaza de España, inaugurados en 1986, ofrece una programación diversa, en V.O.S. ",
+        "enlace": "https://www.cinesrenoir.com/"
+    }, 
+    
+    {
+        "id": 6,
+        "image": "https://elmiradordemadrid.es/wp-content/uploads/2022/05/Calle-Lavapies-grafiti.jpg",
+        "title": "Cine Doré",
+        "address": "Calle de Santa Isabel 357",
+        "distrito": "Centro",
+        "descripcion": "Desde 1989 es la sala de exhibiciones de la Filmoteca Española, proyectandose los más variados títulos mundiales.",
+        "enlace": "https://entradasfilmoteca.gob.es/"
+      
+    },
+    {
+        "id": 7,
+        "image": "https://elmiradordemadrid.es/wp-content/uploads/2022/05/Calle-Lavapies-grafiti.jpg",
+        "title": "Museo Tiflológico",
+        "address": "Calle de la Coruña 18",
+        "distrito": "Tetuán",
+        "descripcion": "Fue creado por la ONCE en 1992, y se define como un museo para ver y tocar. Toma su nombre del término griego typhlós, que significa ciego.",
+        "enlace": "https://museo.once.es/"
+    }, 
+    
+    {
+        "id": 8,
+        "image": "https://elmiradordemadrid.es/wp-content/uploads/2022/05/Calle-Lavapies-grafiti.jpg",
+        "title": "Museo Reina Sofía",
+        "address": "Calle de Santa Isabel 52",
+        "distrito": "Centro",
+        "descripcion": "Desde 1989 es la sala de exhibiciones de la Filmoteca Española, proyectandose los más variados títulos mundiales.",
+        "enlace": "https://www.museoreinasofia.es/"
+      
+    }
+ 
+  
+ 
+]

@@ -6,6 +6,7 @@ import Modal from './components/Modal';
 import Formulario from './components/Formulario';
 import Newsletter from './components/Newsletter';
 import Footerbs from './components/Footerbs';
+import Rutas from './components/Rutas';
 
 const App = () => {
   const [estadoModal5, cambiarEstadoModal5] = useState(true);
@@ -129,6 +130,7 @@ Pero es posible que tenga una mejor experiencia si cambia la configuración de s
         </Modal>
     </div>
       <Hero />
+      <Rutas />
       <Footerbs />
     </div>
   );
